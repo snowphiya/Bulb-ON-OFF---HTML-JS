@@ -1,0 +1,35 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Turn on Light!!</title>
+</head>
+
+<body>
+
+    <h1>Dont Forget To Turn Off Light</h1>
+
+    <img id="bulb" src="image/Lightoff.png"
+         alt="Light is OFF" width="280">
+
+    <br><br>
+
+    <button type="button" onclick="lightOn()">ON</button>
+
+    <button type="button" onclick="lightOff()">OFF</button>
+
+    <script>
+        function lightOn() {
+            document.getElementById("bulb").src = "image/Lighton.png";
+            document.getElementById("bulb").alt = "Light is ON";
+        }
+
+        function lightOff() {
+            document.getElementById("bulb").src = "image/Lightoff.png";
+            document.getElementById("bulb").alt = "Light is OFF";
+        }
+    </script>
+</body>
+</html>
